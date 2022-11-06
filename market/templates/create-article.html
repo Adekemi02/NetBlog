@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container content-section">
+        <form class="form-container" action="{{ url_for('posts.new_article') }}" method="POST">
+            {{form.hidden_tag()}}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-3"> {{legend}} </legend>
+
+                <div class="form-group">
+                    {{ form.title.label(class='form-control-label') }}
+
+                    {% if form.title.errors %}
+                        {{ form.email(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.title.errors %}
+                                <span> {{error}} </span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.title(class='form-control shadow-none form-control-lg', placeholder='Title') }}
+                    {% endif %}
+                </div>
+                <br>
+
+                <div class="form-group">
+                    {{ form.content.label(class='form-control-label') }}
+
+                    {% if form.content.errors %}
+                        {{ form.content(class='form-control form-control-lg is-invalid') }}
+                        <div class="invalid-feedback">
+                            {% for error in form.content.errors %}
+                                <span> {{error}} </span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.content(class='form-control shadow-none form-control-lg', placeholder='Text Field') }}
+                    {% endif %}
+                </div>
+                <br>
+
+                <div class="form-group">
+                    {{ form.submit(class='btn btn-outline-info')}}
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}

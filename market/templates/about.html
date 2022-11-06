@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main class="about-content">
+        <div class="">
+            <h2 class="mt-2 mb-2 about-head"> Hello <font class="text-danger">Blogger</font> </h2>
+            <h3 class=""> 
+                Do you love to read articles and learn new things on the go? Or
+                do you love to write and practice your writing skills for others to read 
+                and learn from? Or would you love to share ideas and make impact?
+            </h3>
+            <p>
+                Then welcome to Netblog. This is a space for curious learners and
+                writers. You get to read articles from other writers and write your own articles on the go.
+                To get started, all you have to do is to register <a class="ml-2 about-link" href="{{url_for('users.register')}}"> here </a> to create your own account and 
+                start writing your article right away. 
+            </p>
+        </div>
+
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already have an account? <a class="ml-2 about-link" href="{{url_for('users.login')}}">Login</a>
+            </small>
+        </div>
+    </main>
+{% endblock content %}
+<!-- {% block footer %}
+    {{super()}}
+    <footer id="footer-end" class="blog-footer bg-gradient text-light bg-dark justify-content-md-center justify-content-center">
+        <h4 class="text-center mt-3 text-danger"> NetBlog </h4>
+        <div class="container text-center">
+            <p>Copyright&copy; 2022 all rights reserved</p>
+            <p>
+                <a class="btn btn-outline text-info" href="#home">Back to top</a>
+            </p>
+        </div>
+    </footer>
+{% endblock footer %} -->

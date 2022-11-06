@@ -1,0 +1,119 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-container {
+    padding: 10px;
+}
+
+.navLink:hover {
+    font-weight: bold;
+    padding: 8px;
+    background-color: rgb(178, 190, 190);
+    transition: 0.3s ease-in-out;
+}
+
+.account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+
+#account {
+    height: 750px;
+}
+
+.article-section {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3
+}
+
+.article-container {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+}
+
+.article-title{
+    /* text-decoration: none; */
+    color: #444444;
+}
+
+.article-content {
+    white-space: pre-line;
+    /* height: 500px; */
+}
+.content-section {
+    height: 500px;
+}
+#title-id {
+    text-decoration: none;
+    /* height: 750px; */
+}
+
+#author-name {
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.update:hover {
+    color: green;
+}
+
+.del:hover {
+    color: red;
+}
+
+.btn:hover {
+    padding: 8px;
+    background-color: transparent;
+    color: red;
+    font-weight: bold;
+}
+
+.about-head {
+    text-align: center;
+}
+.about-link {
+    text-decoration: none;
+    color: red;
+}
+
+.about-link:hover {
+    font-weight: bold;
+}
+
+.about-content {
+    height: 500px;
+}
+
+.blog-footer {
+    bottom: 0;
+    height: 120px;
+}
+
+/* #footer-end {
+    bottom: 0;
+} */
