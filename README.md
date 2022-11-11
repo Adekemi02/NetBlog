@@ -52,7 +52,7 @@ You need to have installed python 3 in your local system. You can get it [here](
  6. Copy the link generated in your terminal on the browser.
 
 ## Contact
-Adisa Barakat Adekemi - [@adisa_adekhemie](https://twitter.com/adisa_adekhemie)
+Twitter - [@adisa_adekhemie](https://twitter.com/adisa_adekhemie)
 
 Mail - adisabarakatadekemi@gmail.com
 
