@@ -111,7 +111,7 @@ python run.py
 
 	```
 
-	docker build Dockerfile -t netblog_app
+	docker build Dockerfile -t netblog
 
 	```
 
@@ -119,7 +119,7 @@ python run.py
 
 	```
 
-	docker run -p 5000:5000 netblog_app
+	docker run -p 5000:5000 netblog
 
 	```
 
@@ -129,7 +129,7 @@ python run.py
 
 	```
 
-	docker pull achebeh/netblog_app
+	docker pull achebeh/netblog
 
 	```
 

@@ -1,16 +1,18 @@
 # set base image (host OS)
-FROM ubuntu
-
-# update apt and installpython and pip
-RUN apt update
-RUN apt install -y python3  python3-pip
+FROM python:3.9.16-slim-bullseye
 
 # copy the dependencies file to the working directory
 COPY NetBlog /opt/NetBlog
 
 # install project dependencies
-RUN pip3 install -r /opt/NetBlog/requirements.txt
-RUN pip3 install flask
+RUN pip install -r /opt/NetBlog/requirements.txt
+RUN pip install flask
+
+# port to run app
+EXPOSE 5000
+
+# working directory
+WORKDIR /opt/NetBlog
 
 # entry point to start the container
 ENTRYPOINT FLASK_APP=/opt/NetBlog/run.py flask run --host=0.0.0.0
