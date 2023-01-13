@@ -51,6 +51,26 @@ You need to have installed python 3 in your local system. You can get it [here](
    ```
  6. Copy the link generated in your terminal on the browser.
 
+ 7. To run the application using the Dockerfile or you can pull from docker repo
+    a. You can choose to build conatainer using the Dockerfile using this command
+        ```
+          docker build Dockerfile -t netblog_app
+        ```
+        then run this command to start the container
+        ```
+          docker run -p 5000:5000 netblog_app
+        ```
+
+    b. To pull the app from docker's repo, run this command
+        ```
+          docker pull achebeh/netblog_app
+        ```
+        then run this command to start the container
+        ```
+          docker run -p 5000:5000 achebeh/netblog_app
+        ```
+
+
 ## Contact
 Twitter - [@adisa_adekhemie](https://twitter.com/adisa_adekhemie)
 
